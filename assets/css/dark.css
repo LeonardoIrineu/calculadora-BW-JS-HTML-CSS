@@ -1,0 +1,33 @@
+.dark.container {
+    background: url('/assets/img/noite.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.dark .calculadora .botoes .valor {
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #000;
+    backdrop-filter: blur(2px);
+}
+
+.dark .calculadora .botoes span {
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border: 1px solid #000;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.dark .calculadora .botoes span.apagar {
+    background: #ff1403;
+}
+
+.dark .calculadora .botoes span.somar {
+    background: #00fc08;
+
+}
+
+.dark .calculadora .botoes span.igual {
+    background: #008cff;
+}

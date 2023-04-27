@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/assets/img/dia.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.calculadora {
+    position: relative;
+    width: 300px;
+}
+
+.calculadora i {
+    font-size: 20px;
+    margin: 20px 10px;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.calculadora i:hover {
+    color: #686767;
+}
+
+.calculadora .botoes {
+    display: grid;
+    position: relative;
+}
+
+.calculadora .botoes .valor {
+    position: relative;
+    grid-column: span 4;
+    width: calc(100% - 16px);
+    left: 8px;
+    margin-bottom: 12px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: #A7AF7C;
+    text-align: right;
+    font-size: 1.5em;
+    color: #3A3C2E;
+    overflow: hidden;
+    box-shadow: inset 0 6px 1px 0 rgba(0, 0, 0, 0.35),
+        0 5px 5px rgba(0, 0, 0, 0.5),
+        0 15px 25px rgba(0, 0, 0, 0.35);
+    user-select: none;
+}
+
+.calculadora .botoes .valor::before {
+    content: '';
+    position: absolute;
+    inset: 5px 3px;
+    border-top: 1px solid #CCC;
+    filter: blur(2px);
+}
+
+.calculadora .botoes span {
+    position: relative;
+    padding: 10px;
+    margin: 6px;
+    min-width: 40px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border: 2px solid #222;
+    border-radius: 6px;
+    background: linear-gradient(#555353, #363535);
+    box-shadow: inset 0 6px 1px 0 rgba(0, 0, 0, 0.35),
+        0 5px 5px rgba(0, 0, 0, 0.5),
+        0 15px 25px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    user-select: none;
+}
+
+.calculadora .botoes span::before {
+    content: '';
+    position: absolute;
+    inset: 5px 3px;
+    border-top: 1px solid #CCC;
+    filter: blur(2px);
+}
+
+.calculadora .botoes span:active {
+    box-shadow: inset 0 6px 1px 0 rgba(0, 0, 0, 0.35),
+        inset 0 5px 5px rgba(0, 0, 0, 0.5),
+        inset 0 15px 25px rgba(0, 0, 0, 0.35);
+    color: #FFF;
+    text-shadow: 0 0 5px #219CF3, 0 0 8px #219CF3;
+}
+
+.calculadora .botoes span.apagar {
+    grid-column: span 2;
+    background: #F44336;
+    color: #FFF;
+}
+
+.calculadora .botoes span.somar {
+    grid-row: span 2;
+    background: #31A935;
+    color: #FFF;
+}
+
+.calculadora .botoes span.igual {
+    background: #2196F3;
+    color: #FFF;
+}
+
